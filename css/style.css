@@ -383,13 +383,16 @@ img {
 	background-color: var(--accent-color);
 }
 .team__social-link {
-	fill: var(--icon-fill);
+	color: var(--icon-fill);
 }
 .team__social-link:focus,
 .team__social-link:hover {
 	transition-duration: var(--general-duration);
 	transition-timing-function: var(--general-timing-function);
-	fill: var(--accent-white-color);
+	color: var(--accent-white-color);
+}
+.team__social-icon {
+	fill: currentColor;
 }
 /* end */
 
@@ -413,7 +416,7 @@ img {
 	width: 170px;
 	border: 1px solid var(--icon-fill);
 	border-radius: 4px;
-	fill: var(--icon-fill);
+	color: var(--icon-fill);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -423,7 +426,10 @@ img {
 	transition-duration: var(--general-duration);
 	transition-timing-function: var(--general-timing-function);
 	border: 1px solid var(--accent-color);
-	fill: var(--accent-color);
+	color: var(--accent-color);
+}
+.client__icon {
+	fill: currentColor;
 }
 
 /* end */
@@ -504,6 +510,7 @@ img {
 
 .card__link {
 	text-decoration: none;
+	display: inline-block;
 }
 .card__link:focus .card__content-wrapper,
 .card__link:hover .card__content-wrapper {
@@ -520,6 +527,9 @@ img {
 .card__link:focus .card__image-overlay,
 .card__link:hover .card__image-overlay {
 	transform: translatey(0%);
+	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+			0px 4px 4px rgba(0, 0, 0, 0.06),
+			1px 4px 6px rgba(0, 0, 0, 0.16);
 	/* animation: overlay-up 250ms cubic-bezier(0.4, 0, 0.2, 1) forwards; */
 
 }
@@ -594,7 +604,7 @@ img {
 .page-footer__flex-container {
 	align-items: baseline;
 }
-.first-column {
+.page-footer__contacts-wrapper {
 	margin-right: 70px;
 }
 .page-footer__logo {
@@ -640,7 +650,10 @@ img {
 	margin-bottom: 20px;
 }
 .page-footer__social-link {
-	fill: var(--accent-white-color);
+	color: var(--accent-white-color);
 	background-color: var(--footer-social-background);
+}
+.page-footer__social-icon {
+	fill: currentColor;
 }
 /* end */	
