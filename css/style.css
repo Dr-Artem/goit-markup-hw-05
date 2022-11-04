@@ -175,7 +175,7 @@ img {
 /* end */
 
 
-/* index #2F303A66*/
+/* index */
 /* index main - order */
 .order__image-wraper {
 	max-width: 1600px;
@@ -327,7 +327,7 @@ img {
 .working__image-title {
 	font-weight: 700;
 	font-size: 14px;
-	line-height: 16px;
+	line-height: 1.14;
 	text-align: center;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -369,7 +369,7 @@ img {
 }
 .team__person-position {
 	font-size: 16px;
-	line-height: 19px;
+	line-height: 1.18;
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--muted-text-color);
@@ -515,18 +515,14 @@ img {
 }
 .card__image-overlay {
 	position: absolute;
-	top: 0;
+	overflow-y: auto;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 	background-color: var(--accent-color-faded);
 	transform: translatey(100%);
 	transition: transform var(--general-transition-effect);
-
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 0 24px;
 }
 .card__link:focus .card__image-overlay,
 .card__link:hover .card__image-overlay {
@@ -534,10 +530,10 @@ img {
 }
 .card__image-text {
 	font-size: 18px;
-	line-height: 28px;
-	/* or 156% */
+	line-height: 1.55;
 	letter-spacing: 0.03em;
 	color: var(--accent-white-color);
+	padding: 63px 24px;
 }
 .card__context {
 	padding: 20px 24px;
@@ -617,3 +613,19 @@ img {
 	fill: currentColor;
 }
 /* end */	
+
+
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.5);
+}
